@@ -1,0 +1,22 @@
+<script lang="javascript">
+
+var contra = prompt("Introduce la contraseña aquí:");
+    
+function redireccionar(pagina) {
+    location.href = pagina;
+}
+    
+if (contra === "20041219") {
+    redireccionar("poler2.html");
+}
+    
+else if (contra === "Aslan") {
+    redireccionar("dedicatorias.html");
+}
+    
+else {
+    alert("La contraseña es incorrecta");
+    redireccionar("index.html");
+}
+    
+</script>

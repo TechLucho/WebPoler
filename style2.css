@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Fredoka;
+    src: url(Fuentes/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Naruto;
+    src: url(Fuentes/njnaruto.ttf);
+}
+
+html{
+    background: rgb(30, 30, 30);
+    color: white;
+}
+
+header{
+    /* color: white; */
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+nav{
+    background: rgb(59,59,59);
+    /* background: linear-gradient(150deg,rgba(8, 97, 175, 1) 0%,rgba(109, 255, 131, 1)100%); */
+    border-radius: 30px;
+    box-shadow: 0px 15px 20px 0px rgba(70, 87, 105, 0.4);
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: Naruto;
+    font-size: 125%;
+    margin-left: 26%;
+    align-items: center;
+
+    /* padding-left: 15px; */
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(209, 204, 32);
+    text-decoration: none;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+nav ul li:hover{
+    border: solid 2px rgb(0, 195, 255);
+    border-radius: 30px;
+}
+
+nav ul li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.li {
+    display: inline-flex;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.li .icon{
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.li:hover .icon, .li:focus .icon, .li:active .icon {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* DEDICATORIAS */
+.dedication-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.dedication-card {
+    width: 30%; /* Adjust as needed for your layout */
+    height: fit-content;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dedication-card:hover {
+    transform: scale(1.1);
+}
+
+.dedication-image {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dedication-text {
+    padding: 5%;
+    text-align: center;
+    font-family: Fredoka;
+    /* font-size: 90%; */
+}
+
+footer{
+    text-align: center;
+    font-family: Fredoka;
+    font-size: 16px;
+}
+
+/* Portatil */
+@media (max-width: 1440px){
+    nav ul li{
+        margin-left: 25%;
+        font-size: 18px;
+    }
+            
+    nav ul li img{
+        width: 27px;
+        height: 27px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    nav ul li{
+        margin-left: 18%;
+        font-size: 18px;
+    }
+            
+    nav ul li img{
+        width: 27px;
+        height: 27px;
+    }
+
+    .dedication-card{
+        width: 45%;
+    }
+}
+
+/* Móvil */
+@media (max-width: 425px){
+    nav ul li{
+        margin-left: 25%;
+        font-size: 18px;
+    }
+            
+    nav ul li img{
+        width: 27px;
+        height: 27px;
+    }
+
+    .dedication-card{
+        width: 90%;
+    }
+}
